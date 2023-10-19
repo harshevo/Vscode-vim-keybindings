@@ -1,0 +1,152 @@
+{
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+        },
+
+
+        {
+            "before": [
+                "g",
+                "e"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+
+        {
+            "before": [
+                "leader",
+                "f"
+            ],
+            "after": [
+                "/"
+            ]
+        },
+
+        {
+            "before": [
+                "g",
+                "b"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "Z",
+                "Z"
+            ],
+            "commands": [
+                ":w"
+            ]
+        },
+
+        {
+            "before": ["g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        {
+            "before": ["g", "q"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+
+        {
+           "before": ["<leader>","f"],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                    "args": []
+                }
+            ]
+        },
+
+        {
+            "before": ["<leader>","t"],
+            "commands":[
+                {
+                    "command":"workbench.action.terminal.toggleTerminal"
+                }
+            ]
+        }
+    ],
+
+
+        
+     
+    "editor.mouseWheelZoom": true,
+    "code-runner.runInTerminal": true,
+    "redhat.telemetry.enabled": false,
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 16,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": -1,
+    "vim.highlightedyank.enable": true,
+    "vim.leader": "<space>",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "J",
+                "J"
+            ],
+            "after": [
+                "<esc>"
+            ]
+        }
+    ],
+
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1 
+    },
+
+   
+    "editor.cursorSurroundingLines": 8,
+   
+
+    "vim.useSystemClipboard": true,
+    "explorer.confirmDelete": false,
+    
+}   
