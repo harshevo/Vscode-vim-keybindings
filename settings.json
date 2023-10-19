@@ -57,6 +57,9 @@
             ]
         },
 
+        
+        
+//LSP keybindings
         {
             "before": ["g", "p", "d"],
             "commands": ["editor.action.peekDefinition"]
