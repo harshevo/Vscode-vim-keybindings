@@ -12,6 +12,12 @@
         }
     ],
     "vim.normalModeKeyBindings": [
+
+        {
+            "before": ["<leader>", "b"],
+            "commands": ["code-runner.run"]
+        },
+
         {
             "before": ["<leader>", "e"],
             "commands": ["workbench.view.explorer"]
@@ -201,5 +207,7 @@
     "explorer.confirmDelete": false,
     "window.titleBarStyle": "custom",
     "window.density.editorTabHeight": "compact",
+    "vim.hlsearch": true,
+    "vim.timeout": 500,
     
 }
