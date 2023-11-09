@@ -1,3 +1,4 @@
+
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
@@ -36,7 +37,7 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
     },
     {
-        "key":"space r",
+        "key":"ctrl+r",
         "command":"workbench.action.closeQuickOpen",
         "when":"inQuickOpen" 
     },
@@ -61,10 +62,10 @@
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
     },
-    {
-        "key": "meta+r",
-        "command": "code-runner.run"
-    },
+    // {
+    //     "key": "meta+r",
+    //     "command": "code-runner.run"
+    // },
     {
         "key": "ctrl+alt+n",
         "command": "-code-runner.run"
