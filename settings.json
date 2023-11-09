@@ -17,6 +17,50 @@
             "commands": ["workbench.view.explorer"]
         },
 
+        {
+            "before": ["<leader>","c"],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+
+        // {
+        //     "before": ["<leader>","g"],
+        //     "commands":[
+        //         "workbench.action.previousEditorInGroup"
+        //     ]
+        // },
+
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+
+        {
+        "before": ["leader", "h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+        "before": ["leader", "j"],
+        "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+        "before": ["leader", "k"],
+        "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+        "before": ["leader", "l"],
+        "commands": ["workbench.action.focusRightGroup"]
+        },
+
+        // {
+        //     "before": ["<leader>","h"],
+        //     "commands":[
+        //         "workbench.action.nextEditorInGroup"
+        //     ]
+        // },
 
         {
             "before": [
@@ -57,13 +101,11 @@
             ]
         },
 
-        
-        
-//LSP keybindings
         {
             "before": ["g", "p", "d"],
             "commands": ["editor.action.peekDefinition"]
         },
+
         {
             "before": ["g", "h"],
             "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -94,7 +136,7 @@
         },
 
         {
-           "before": ["<leader>","f"],
+           "before": ["<leader>","r"],
             "commands": [
                 {
                     "command": "workbench.action.quickOpen",
@@ -109,7 +151,7 @@
                 {
                     "command":"workbench.action.terminal.toggleTerminal"
                 }
-            ]
+            ],
         }
     ],
 
@@ -124,10 +166,12 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontSize": 16,
     "liveServer.settings.donotShowInfoMsg": true,
-    "window.zoomLevel": -1,
     "vim.highlightedyank.enable": true,
     "vim.leader": "<space>",
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true, 
+    "editor.linkedEditing": true,
 
     "vim.visualModeKeyBindings": [
         {
@@ -138,7 +182,11 @@
             "after": [
                 "<esc>"
             ]
-        }
+        },
+
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+        
     ],
 
     "extensions.experimental.affinity": {
@@ -151,5 +199,7 @@
 
     "vim.useSystemClipboard": true,
     "explorer.confirmDelete": false,
+    "window.titleBarStyle": "custom",
+    "window.density.editorTabHeight": "compact",
     
-}   
+}
