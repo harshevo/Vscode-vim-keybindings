@@ -36,13 +36,37 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
     },
     {
-        "key":"space f",
+        "key":"space r",
         "command":"workbench.action.closeQuickOpen",
         "when":"inQuickOpen" 
     },
     {
-        "key":"space t",
+        "key":"ctrl+p",
         "command":"workbench.action.terminal.toggleTerminal",
         "when":"terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "meta+r",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
     }
 ]
