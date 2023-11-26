@@ -14,8 +14,18 @@
     "vim.normalModeKeyBindings": [
 
         {
+            "before":["<leader>", "w"],
+            "commands":["workbench.action.files.save"]
+        },
+
+        {
+            "before":["<leader>", "a"],
+            "commands":["editor.action.selectHighlights"]
+        },
+
+        {
             "before": ["<leader>", "b"],
-            "commands": ["code-runner.run"]
+            "commands": ["workbench.action.files.save","code-runner.run"]
         },
 
         {
@@ -78,15 +88,15 @@
             ]
         },
 
-        {
-            "before": [
-                "leader",
-                "f"
-            ],
-            "after": [
-                "/"
-            ]
-        },
+        // {
+        //     "before": [
+        //         "leader",
+        //         "f"
+        //     ],
+        //     "after": [
+        //         "/"
+        //     ]
+        // },
 
         {
             "before": [
@@ -142,7 +152,7 @@
         },
 
         {
-           "before": ["<leader>","r"],
+           "before": ["<leader>","f"],
             "commands": [
                 {
                     "command": "workbench.action.quickOpen",
@@ -166,11 +176,8 @@
      
     "editor.mouseWheelZoom": true,
     "code-runner.runInTerminal": true,
-    "redhat.telemetry.enabled": false,
-    "files.autoSave": "afterDelay",
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 16,
     "liveServer.settings.donotShowInfoMsg": true,
     "vim.highlightedyank.enable": true,
     "vim.leader": "<space>",
@@ -180,15 +187,15 @@
     "editor.linkedEditing": true,
 
     "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "J",
-                "J"
-            ],
-            "after": [
-                "<esc>"
-            ]
-        },
+        // {
+        //     "before": [
+        //         "V",
+        //         "V"
+        //     ],
+        //     "after": [
+        //         "<esc>"
+        //     ]
+        // },
 
         { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
         { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
@@ -196,7 +203,8 @@
     ],
 
     "extensions.experimental.affinity": {
-        "vscodevim.vim": 1 
+        "vscodevim.vim": 1 ,
+        "asvetliakov.vscode-neovim": 1
     },
 
    
@@ -209,5 +217,8 @@
     "window.density.editorTabHeight": "compact",
     "vim.hlsearch": true,
     "vim.timeout": 500,
+    "editor.fontSize": 16,
+    "files.autoSaveDelay": 1,
+    "files.autoSave": "onFocusChange",
     
 }
