@@ -11,7 +11,29 @@
             ]
         }
     ],
+    "vim.normalModeKeyBindingsNonRecursive": [{
+        "before": ["u"],
+        "after": [],
+        "commands": [{
+            "command": "undo",
+            "args": []
+        }]
+        },
+        {
+            "before": ["<C-r>"],
+            "after": [],
+            "commands": [{
+                "command": "redo",
+                "args": []
+            }]
+        }
+    ],
+    
     "vim.normalModeKeyBindings": [
+        {
+        "before": ["<Leader>", "/"],
+        "commands": [":noh"]
+        },
 
         {
             "before":["<leader>", "w"],
@@ -204,7 +226,7 @@
 
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1 ,
-        "asvetliakov.vscode-neovim": 1
+        // "asvetliakov.vscode-neovim": 1
     },
 
    
@@ -216,9 +238,16 @@
     "window.titleBarStyle": "custom",
     "window.density.editorTabHeight": "compact",
     "vim.hlsearch": true,
-    "vim.timeout": 500,
+    "vim.timeout": 400,
     "editor.fontSize": 16,
     "files.autoSaveDelay": 1,
     "files.autoSave": "onFocusChange",
-    
-}
+    "zenMode.hideLineNumbers": false,
+    "C_Cpp.autocomplete": "disabled",
+    "vim.visualstar": true,
+    "workbench.activityBar.location": "top",
+    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.tabs.enabled": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "window.zoomLevel": 1,
+    }
