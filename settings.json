@@ -250,4 +250,6 @@
     "terminal.integrated.tabs.enabled": false,
     "workbench.colorTheme": "Atom One Dark",
     "window.zoomLevel": 1,
+    "vim.smartRelativeLine":true,
+    "editor.lineNumbers":"relative",
     }
