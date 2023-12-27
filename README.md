@@ -1,9 +1,9 @@
->> Vscode-vim-keybindings
+* Vscode-vim-keybindings *
 
 
->> For Fuzzy-Finder
+ For Fuzzy-Finder
 
->> Install below packages
+Install below packages
 
 - fzfind vscode extension
 - fd-find
