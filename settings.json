@@ -4,7 +4,7 @@
         {
             "before": [
                 "j",
-                "j"
+                "k"
             ],
             "after": [
                 "<esc>"
@@ -35,10 +35,10 @@
         "commands": [":noh"]
         },
 
-        {
-            "before":["<Leader>", "r"],
-            "commands": ["fzf-quick-open.runFzfSearch"]
-        },
+        // {
+        //     "before":["<Leader>", "r"],
+        //     "commands": ["fzf-quick-open.runFzfSearch"]
+        // },
 
         {
             "before":["<leader>", "w"],
@@ -105,15 +105,15 @@
         //     ]
         // },
 
-        {
-            "before": [
-                "g",
-                "e"
-            ],
-            "after": [
-                "$"
-            ]
-        },
+        // {
+        //     "before": [
+        //         "g",
+        //         "e"
+        //     ],
+        //     "after": [
+        //         "$"
+        //     ]
+        // },
 
         // {
         //     "before": [
@@ -125,15 +125,15 @@
         //     ]
         // },
 
-        {
-            "before": [
-                "g",
-                "b"
-            ],
-            "after": [
-                "^"
-            ]
-        },
+        // {
+        //     "before": [
+        //         "g",
+        //         "b"
+        //     ],
+        //     "after": [
+        //         "^"
+        //     ]
+        // },
         {
             "before": [
                 "Z",
@@ -187,6 +187,7 @@
                 }
             ]
         },
+
 
         {
             "before": ["<leader>","t"],
@@ -243,16 +244,23 @@
     "window.titleBarStyle": "custom",
     "window.density.editorTabHeight": "compact",
     "vim.hlsearch": true,
-    "vim.timeout": 400,
+    "vim.timeout": 500,
     "editor.fontSize": 16,
     "files.autoSaveDelay": 1,
     "files.autoSave": "onFocusChange",
     "zenMode.hideLineNumbers": false,
     "vim.visualstar": true,
-    "workbench.activityBar.location": "top",
     "terminal.integrated.tabs.location": "left",
     "terminal.integrated.tabs.enabled": false,
     "vim.smartRelativeLine": true,
     "editor.lineNumbers": "relative",
     "C_Cpp.default.cppStandard": "c++23",
+    "editor.wordWrap": "on",
+    "window.customTitleBarVisibility": "auto",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "Ayu Dark",
     }
