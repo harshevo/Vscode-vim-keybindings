@@ -31,8 +31,8 @@
     
     "vim.normalModeKeyBindings": [
         {
-        "before": ["<Leader>", "/"],
-        "commands": [":noh"]
+            "before": ["<leader>", "/"],
+            "commands": [":noh"]
         },
 
         // {
@@ -150,7 +150,7 @@
         },
 
         {
-            "before": ["g", "h"],
+            "before": ["<S-k>"],
             "commands": ["editor.action.showDefinitionPreviewHover"]
         },
         {
@@ -245,7 +245,7 @@
     "window.density.editorTabHeight": "compact",
     "vim.hlsearch": true,
     "vim.timeout": 500,
-    "editor.fontSize": 16,
+    "editor.fontSize": 20,
     "files.autoSaveDelay": 1,
     "files.autoSave": "onFocusChange",
     "zenMode.hideLineNumbers": false,
@@ -262,5 +262,6 @@
     },
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "workbench.colorTheme": "Ayu Dark",
-    }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+}
