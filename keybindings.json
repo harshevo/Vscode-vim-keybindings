@@ -6,6 +6,11 @@
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "filesExplorerFocus && !inputFocus"
     },
+      {
+    "key": "space f",
+    "command": "workbench.action.quickOpen",
+    "when": "!inputFocus"
+  },
     {
         "key": "a",
         "command": "explorer.newFile",
